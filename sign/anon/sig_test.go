@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/edwards25519"
-	"github.com/dedis/kyber/util/random"
-	"github.com/dedis/kyber/xof/blake2xb"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/edwards25519"
+	"gopkg.in/dedis/kyber.v2/util/random"
+	"gopkg.in/dedis/kyber.v2/xof/blake2xb"
 )
 
 // This example demonstrates signing and signature verification

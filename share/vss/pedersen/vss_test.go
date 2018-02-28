@@ -4,12 +4,12 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/edwards25519"
-	"github.com/dedis/kyber/sign/schnorr"
-	"github.com/dedis/kyber/xof/blake2xb"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/edwards25519"
+	"gopkg.in/dedis/kyber.v2/sign/schnorr"
+	"gopkg.in/dedis/kyber.v2/xof/blake2xb"
 )
 
 var rng = blake2xb.New(nil)

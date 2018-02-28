@@ -3,8 +3,8 @@ package examples
 import (
 	"fmt"
 
-	"github.com/dedis/kyber/group/edwards25519"
-	"github.com/dedis/kyber/xof/blake2xb"
+	"gopkg.in/dedis/kyber.v2/group/edwards25519"
+	"gopkg.in/dedis/kyber.v2/xof/blake2xb"
 )
 
 /*

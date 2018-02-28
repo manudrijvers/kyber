@@ -12,10 +12,10 @@ import (
 
 	"github.com/dedis/fixbuf"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/internal/marshalling"
-	"github.com/dedis/kyber/util/random"
-	"github.com/dedis/kyber/xof/blake2xb"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/internal/marshalling"
+	"gopkg.in/dedis/kyber.v2/util/random"
+	"gopkg.in/dedis/kyber.v2/xof/blake2xb"
 )
 
 type QrSuite struct {
@@ -48,7 +48,7 @@ func (s *QrSuite) New(t reflect.Type) interface{} {
 }
 
 // NewBlakeSHA256QR512 returns a cipher suite based on package
-// github.com/dedis/kyber/xof/blake2xb, SHA-256, and a residue group of
+// gopkg.in/dedis/kyber.v2/xof/blake2xb, SHA-256, and a residue group of
 // quadratic residues modulo a 512-bit prime.
 //
 // This group size should be used only for testing and experimentation.

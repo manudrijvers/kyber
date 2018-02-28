@@ -11,10 +11,10 @@ import (
 
 	"github.com/dedis/fixbuf"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/internal/marshalling"
-	"github.com/dedis/kyber/util/random"
-	"github.com/dedis/kyber/xof/blake2xb"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/internal/marshalling"
+	"gopkg.in/dedis/kyber.v2/util/random"
+	"gopkg.in/dedis/kyber.v2/xof/blake2xb"
 )
 
 type Suite128 struct {
@@ -47,7 +47,7 @@ func (s *Suite128) New(t reflect.Type) interface{} {
 }
 
 // NewBlakeSHA256P256 returns a cipher suite based on package
-// github.com/dedis/kyber/xof/blake2xb, SHA-256, and the NIST P-256
+// gopkg.in/dedis/kyber.v2/xof/blake2xb, SHA-256, and the NIST P-256
 // elliptic curve. It returns random streams from Go's crypto/rand.
 //
 // The scalars created by this group implement kyber.Scalar's SetBytes

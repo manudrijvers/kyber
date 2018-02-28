@@ -5,7 +5,7 @@ package curve25519
 import (
 	"testing"
 
-	"github.com/dedis/kyber/util/test"
+	"gopkg.in/dedis/kyber.v2/util/test"
 )
 
 // Test the basic implementation of the Ed25519 curve.

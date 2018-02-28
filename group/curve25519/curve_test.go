@@ -5,10 +5,10 @@ package curve25519
 import (
 	"testing"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/edwards25519"
-	"github.com/dedis/kyber/util/random"
-	"github.com/dedis/kyber/util/test"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/edwards25519"
+	"gopkg.in/dedis/kyber.v2/util/random"
+	"gopkg.in/dedis/kyber.v2/util/test"
 )
 
 var testSuite = NewBlakeSHA256Curve25519(false)

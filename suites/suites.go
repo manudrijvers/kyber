@@ -13,7 +13,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/dedis/kyber"
+	"gopkg.in/dedis/kyber.v2"
 )
 
 // Suite is the sum of all suites mix-ins in Kyber.

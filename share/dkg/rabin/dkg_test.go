@@ -4,13 +4,13 @@ import (
 	"crypto/rand"
 	"testing"
 
-	"github.com/dedis/kyber"
-	"github.com/dedis/kyber/group/edwards25519"
-	"github.com/dedis/kyber/share"
-	vss "github.com/dedis/kyber/share/vss/rabin"
-	"github.com/dedis/kyber/sign/schnorr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"gopkg.in/dedis/kyber.v2"
+	"gopkg.in/dedis/kyber.v2/group/edwards25519"
+	"gopkg.in/dedis/kyber.v2/share"
+	vss "gopkg.in/dedis/kyber.v2/share/vss/rabin"
+	"gopkg.in/dedis/kyber.v2/sign/schnorr"
 )
 
 var suite = edwards25519.NewBlakeSHA256Ed25519()

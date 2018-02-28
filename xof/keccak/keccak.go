@@ -3,8 +3,8 @@
 package keccak
 
 import (
-	"github.com/dedis/kyber"
 	"golang.org/x/crypto/sha3"
+	"gopkg.in/dedis/kyber.v2"
 )
 
 type xof struct {
